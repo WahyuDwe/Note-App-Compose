@@ -8,3 +8,8 @@ This app has 3 screens:
 3. Edit Note Screen: This screen is used to edit a note.
 
 # Screenshots
+<p>
+  <img src="https://github.com/WahyuDwe/Note-App-Compose/blob/main/image/home.jpeg" width="250">
+  <img src="https://github.com/WahyuDwe/Note-App-Compose/blob/main/image/new%20note.jpeg" width="250">
+  <img src="https://github.com/WahyuDwe/Note-App-Compose/blob/main/image/detail%20note.jpeg" width="250">
+</p>
