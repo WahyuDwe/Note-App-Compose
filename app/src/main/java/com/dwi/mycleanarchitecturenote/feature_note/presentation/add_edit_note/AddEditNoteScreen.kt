@@ -86,6 +86,7 @@ fun AddEditNoteScreen(
                 onClick = {
                     viewModel.onEvent(AddEditNoteEvent.SaveNote)
                 },
+                containerColor = noteBackgroundAnimatable.value
             ) {
                 Icon(Icons.Rounded.Save, contentDescription = "Add note")
             }
