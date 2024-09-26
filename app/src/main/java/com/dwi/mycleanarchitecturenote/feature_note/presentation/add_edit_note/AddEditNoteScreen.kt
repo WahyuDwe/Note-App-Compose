@@ -148,7 +148,7 @@ fun AddEditNoteScreen(
                     viewModel.onEvent(AddEditNoteEvent.ChangeTitleFocus(it))
                 },
                 isSingleLine = true,
-                textStyle = MaterialTheme.typography.titleLarge,
+                textStyle = MaterialTheme.typography.headlineLarge,
             )
             Spacer(modifier = Modifier.height(16.dp))
             TransparentHintTextField(
@@ -162,8 +162,8 @@ fun AddEditNoteScreen(
                 onFocusChange = {
                     viewModel.onEvent(AddEditNoteEvent.ChangeContentFocus(it))
                 },
-                isSingleLine = true,
-                textStyle = MaterialTheme.typography.bodyMedium,
+                isSingleLine = false,
+                textStyle = MaterialTheme.typography.bodyLarge,
             )
         }
     }
