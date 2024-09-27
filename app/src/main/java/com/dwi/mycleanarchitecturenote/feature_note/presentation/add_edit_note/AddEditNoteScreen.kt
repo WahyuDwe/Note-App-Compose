@@ -18,8 +18,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Save
 import androidx.compose.material.icons.rounded.Save
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
@@ -96,11 +94,16 @@ fun AddEditNoteScreen(
         }
     ) { innerPadding ->
         Column(
-            modifier = modifier
-                .fillMaxSize()
-                .background(noteBackgroundAnimatable.value)
-                .padding(innerPadding)
-                .padding(16.dp),
+            modifier = modifier.run {
+                fillMaxSize()
+                        .background(noteBackgroundAnimatable.value)
+                        .padding(innerPadding)
+                        .padding(
+                            start = 16.dp,
+                            end = 16.dp,
+                            top = 16.dp,
+                        )
+            },
         ) {
             Row(
                 modifier = modifier
@@ -153,7 +156,7 @@ fun AddEditNoteScreen(
             )
             Spacer(modifier = Modifier.height(16.dp))
             TransparentHintTextField(
-                modifier = modifier.fillMaxHeight(),
+                modifier = Modifier.fillMaxHeight(),
                 text = contentState.text,
                 hint = contentState.hint,
                 isHintVisible = contentState.isHintVisible,
